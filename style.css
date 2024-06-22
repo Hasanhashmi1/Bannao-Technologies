@@ -1,0 +1,382 @@
+.active {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.ibm-plex-sans-regular {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-sans-semibold {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.NavbarSec {
+    width: 100%;
+}
+
+.mainContentHolder {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.MainNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box .svgHolder {
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+
+}
+
+.search-box input[type="text"] {
+    background-color: #f2f2f2;
+    width: 22em;
+    padding: 8px 20px 8px 50px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 14px;
+    outline: none;
+    font-family: "IBM Plex Sans", sans-serif;
+
+}
+
+.svgHolder svg {
+    width: 22px;
+    aspect-ratio: auto 22 / 22;
+    height: 22px;
+}
+
+.TextHolder a {
+    text-decoration: none;
+}
+
+.carousel-item {
+    width: 1440px;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-text-holder {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 12%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+}
+
+.carousel-text-holder h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.carousel-text-holder p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.pagination-underlined {
+    display: flex;
+    max-width: 950px;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-underline li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-underline li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+.line-braker {
+    width: 50%;
+}
+
+.line-braker-container {
+    width: 100%;
+    min-width: fit-content;
+}
+
+.title-modal-sm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title-modal-sm {
+    font-size: 14px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: green;
+}
+
+.top-heading-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-svg-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AccountCreation {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: .5rem !important;
+}
+
+.AccountCreation :nth-child(2) {
+    display: block;
+    width: 100%;
+}
+
+.btn-login {
+    height: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+
+}
+
+.login-image-container {
+    width: 50%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.social-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.card-holder img {
+    height: 220px;
+    border-radius: 4px 4px 0 0;
+    background-color: #c4c4c4;
+    object-fit: cover;
+}
+
+.location-search {
+    position: relative;
+    /* min-width: fit-content; */
+    width: 260px;
+}
+
+.location-search input {
+    padding: 5px 40px; 
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: border-bottom-color 0.3s;
+}
+
+.location-search input:focus {
+    outline: none;
+    border-bottom-color: #000; 
+}
+.text-loc-holder{
+    display: flex;
+    gap: 0.5em;
+    margin-top: .75em !important;
+    align-items: flex-start;
+    text-align: justify;
+    color: #000;
+    opacity: .5;
+    font-size: 12px;
+    font-weight: 400;
+}
+.svgLoc, .svgPen {
+    position: absolute;
+    top: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.svgLoc {
+    left: 10px;
+}
+
+.svgPen {
+    right: 10px;
+}
+
+.card-holder-section {
+    min-width: fit-content;
+    gap: 2.20em;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.inner-card-holder{
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.card-holder {
+    display: flex;
+    
+    gap: 1.5em;
+    justify-content: flex-end;
+}
+.dots-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.accountLineup{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.accountDp{
+    gap: 1em;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.accountDp img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.share-icon{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5em;
+}
+.inner-location {
+    min-width: fit-content;
+}
+.btn-coloumn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 1.75em; */
+    margin-bottom: 1.75em;
+}
+.btn-coloumn button{
+    width: 50%;
+    border-radius: 25px;
+    color: rgb(228, 32, 32);
+    border-color: rgb(0, 0, 0);
+}
+.btn-coloumn button:hover , .btn-coloumn:focus{
+    background-color: none;
+    outline: none;
+    color: rgb(228, 32, 32);
+
+}
+.btn-green{
+    color: green !important; 
+}
+
+.card-loc-holder{
+    min-width: fit-content;
+    margin-bottom: .75em;
+    display: flex;
+    justify-content: space-between;
+}
+.recomdation-starting{
+    margin-top: .75em;
+    min-width: fit-content;
+}
+.recomandation-gropus{
+    margin-top: .75em;
+    min-width: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-groups1 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.inner-btn button{
+    background-color: #edeef0;
+}
+.top-heading-container span{
+   color: rgb(46, 155, 192);
+}
+#btnDiss{
+    display: none;
+}
+
+/* Responsive styles */
+@media (min-width:969px){
+
+}
