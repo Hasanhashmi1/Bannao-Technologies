@@ -40,7 +40,7 @@ btn.addEventListener("click", () => {
 });
 // Responsiveness 
 function changeRun(){
-    const mouse = document.getElementById("jitLin");
+    const mouse = document.getElementById("changeTo");
     if (!isActive) {
         mouse.innerHTML = "Leave group";
         
@@ -68,7 +68,7 @@ function changeRun(){
     const heading = document.getElementById("hiddenHead");
     const buttonHid = document.getElementById("hiddenCreateAccount");
     const hiddenForgotPassword = document.getElementById("hiddDiss");
-
+    
     if (!isActive) {
         hidBlock.style.display = "none";
         heading.innerHTML = "Sign Up";
