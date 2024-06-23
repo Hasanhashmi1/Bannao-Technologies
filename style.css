@@ -119,10 +119,11 @@
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     justify-content: space-between;
     align-items: center;
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
+    /* For Safari */
     position: sticky;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .margin-center {
@@ -142,13 +143,13 @@
 
 
 .line-braker {
-    width: 50%;
+    max-width: 950px;
 }
 
 .line-braker-container {
-    width: 100%;
-    min-width: fit-content;
+    margin-top: 0;
 }
+
 
 .title-modal-sm {
     width: 100%;
@@ -233,7 +234,7 @@
 }
 
 .location-search input {
-    padding: 5px 40px; 
+    padding: 5px 40px;
     width: 100%;
     border: none;
     border-bottom: 1px solid black;
@@ -242,9 +243,10 @@
 
 .location-search input:focus {
     outline: none;
-    border-bottom-color: #000; 
+    border-bottom-color: #000;
 }
-.text-loc-holder{
+
+.text-loc-holder {
     display: flex;
     gap: 0.5em;
     margin-top: .75em !important;
@@ -255,7 +257,9 @@
     font-size: 12px;
     font-weight: 400;
 }
-.svgLoc, .svgPen {
+
+.svgLoc,
+.svgPen {
     position: absolute;
     top: 15px;
     transform: translateY(-50%);
@@ -278,82 +282,96 @@
     justify-items: center;
     justify-content: center;
 }
-.inner-card-holder{
+
+.inner-card-holder {
     gap: 1.5em;
     display: flex;
     flex-direction: column;
 }
+
 .card-holder {
     display: flex;
-    
+
     gap: 1.5em;
     justify-content: flex-end;
 }
-.dots-heading{
+
+.dots-heading {
     display: flex;
     justify-content: space-between;
 }
-.accountLineup{
+
+.accountLineup {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.accountDp{
+.accountDp {
     gap: 1em;
     width: 50%;
     display: flex;
     align-items: flex-end;
 }
-.accountDp img{
+
+.accountDp img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-.share-icon{
+
+.share-icon {
     width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: .5em;
 }
+
 .inner-location {
     min-width: fit-content;
 }
-.btn-coloumn{
+
+.btn-coloumn {
     width: 100%;
     display: flex;
     justify-content: center;
     /* margin-top: 1.75em; */
     margin-bottom: 1.75em;
 }
-.btn-coloumn button{
-    width: 50%;
+
+.btn-coloumn button {
+    width: 100%;
     border-radius: 25px;
     color: rgb(228, 32, 32);
     border-color: rgb(0, 0, 0);
 }
-.btn-coloumn button:hover , .btn-coloumn:focus{
+
+.btn-coloumn button:hover,
+.btn-coloumn:focus {
     background-color: none;
     outline: none;
     color: rgb(228, 32, 32);
 
 }
-.btn-green{
-    color: green !important; 
+
+.btn-green {
+    color: green !important;
 }
 
-.card-loc-holder{
+.card-loc-holder {
     min-width: fit-content;
     margin-bottom: .75em;
     display: flex;
     justify-content: space-between;
 }
-.recomdation-starting{
+
+.recomdation-starting {
     margin-top: .75em;
     min-width: fit-content;
 }
-.recomandation-gropus{
+
+.recomandation-gropus {
     margin-top: .75em;
     min-width: fit-content;
     width: 100%;
@@ -361,22 +379,336 @@
     justify-content: space-between;
     align-items: center;
 }
-.inner-groups1 img{
+
+.inner-groups1 img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
-.inner-btn button{
+
+.inner-btn button {
     background-color: #edeef0;
 }
-.top-heading-container span{
-   color: rgb(46, 155, 192);
+
+.top-heading-container span {
+    color: rgb(46, 155, 192);
 }
-#btnDiss{
+
+
+.popUp,
+.fixed-button,
+.inner-left-btn,
+.specialHolder,
+#hiddenDiv,
+#btnDiss {
     display: none;
 }
 
+
 /* Responsive styles */
-@media (min-width:969px){
+@media (max-width:991px) {
+    .fixed-button {
+        display: block;
+    }
+
+    #mainNavbarSec {
+        display: none;
+    }
+
+
+    .ResponsiveImage {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .Mycontainer {
+        margin-left: 2em;
+        display: flex;
+    }
+
+
+    .buttonNav {
+        margin-right: 2em;
+        display: flex;
+
+
+    }
+
+
+    .navBtn {
+        width: 150px;
+        height: 40px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    #paginationDiss,
+    #lineDis,
+    #locDis {
+        display: none;
+    }
+
+    #cardMarg {
+        margin-top: 1.5em !important;
+    }
+
+    .specialHolder span {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .specialHolder {
+        padding: 0px 10px 0px 10px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .carousel-text-holder h2 {
+        font-size: 30px;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+    }
+
+    .carousel-text-holder {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 10%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+    }
+
+    .carousel-item img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+    }
+
+    .carousel-item {
+        width: 360px;
+        height: 236px;
+    }
+
+    .inner-left-btn {
+        display: flex;
+        position: absolute;
+        top: 0;
+        background-color: transparent;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
+    .btn-upper-special {
+        width: 50%;
+        margin-left: 1em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .another-specialBtn {
+        width: 50%;
+        margin-right: 1em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+    .custom-btn {
+        width: 100px;
+        height: 40px;
+        border: 1px solid white;
+        font-size: 14px;
+        color: white;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
+    .btn-private {
+        width: 100px;
+        height: 40px;
+    }
+
+    .arrowImage {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fixed-button {
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .fixed-img {
+        width: 20px;
+        height: 25px;
+    }
+
+    .popUp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ebe6e6;
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        transition: bottom 0.3s ease-in-out;
+        z-index: 1000;
+
+
+    }
+    .hiddenButtonsHolder{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hiddenBtnLogin{
+        width: 50%;
+    }
+
+    .popUp.active {
+        bottom: 0;
+    }
+
+    .halfLength {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    #hiddDiss{
+    display: none;
+    }
+
+    .hiddenText {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fullWid {
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hiddenForm {
+        margin-top: .5em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .correctionForm {
+        width: 90%;
+
+    }
+
+    
+
+    .fullWid button {
+        width: 50px;
+        height: 40px;
+    }
+
+    .fullWid svg {
+        width: 25px;
+        height: 30px;
+    }
+    .signUpNow{
+        color: #007BFF;
+        border: none;
+        font-size: 12px;
+        outline: none;
+    }
+    .AccountCreation :nth-child(2) {
+        
+        width: auto;
+    }
+    
+
+
+
+
+}
+
+/* Mobile responsive */
+@media (max-width:767px) {
+    .custom-btn {
+        width: 90px;
+        height: 35px;
+        border: 1px solid white;
+        font-size: 12px;
+        color: white;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
+
+    .btn-private {
+        width: 55px;
+        height: 40px;
+    }
+
+    .arrowImage {
+        width: 30px;
+        height: 30px;
+    }
+
+    .custom-btn:active {
+        border: none;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

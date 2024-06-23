@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <section class="NavbarSec">
+    <section class="NavbarSec" id="mainNavbarSec">
+
         <div class="mainContentHolder">
             <nav class="MainNav">
                 <span class="logo-icon">
@@ -123,9 +124,13 @@
 
                 </form>
                 <div class="TextHolder">
-                    <p class="ibm-plex-sans-regular">
+                    <div class="inner-groups1" id="hiddenDiv">
+                        <img src="https://hasanhashmi1.github.io/Hexon/Hasan.jpg" alt="Hasan Hashmi">
+                        <span>Hasan Hashmi</span>
+                    </div>
+                    <p class="ibm-plex-sans-regular" id="textHolder-acc">
                         Create Account. <a href="http://" data-bs-toggle="modal" data-bs-target="#exampleModal"><span
-                                class="ibm-plex-sans-semibold">It's Free</span></a>
+                                class="ibm-plex-sans-semibold" id="spanText">It's Free</span></a>
                     </p>
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -141,7 +146,8 @@
                                 <div class="modal-body">
                                     <div class="top-heading-container">
                                         <h1 id="modalHead">Create Account</h1>
-                                        <button type="button" id="btnChange" class="btn btn-outline">Already have a account? <span>Sign Up</span></button>
+                                        <button type="button" id="btnChange" class="btn btn-outline">Already have a
+                                            account? <span>Sign Up</span></button>
                                     </div>
                                     <div class="form-svg-container">
                                         <form class="AccountCreation">
@@ -158,7 +164,8 @@
                                                 id="exampleInputPassword1">
                                             <input type="password" placeholder="Confirm Password" class="form-control"
                                                 id="exampleInputPassword2">
-                                            <button class="btn-login" type="button">Create Account</button>
+                                            <button class="btn-login" type="button" id="createAccount">Create
+                                                Account</button>
                                             <div class="social-login">
                                                 <button type="button" class="btn btn-outline-primary"><img
                                                         src="./Assets/facebook-ImnSLa_q.svg" alt="Facebook"> Sign Up
@@ -166,7 +173,8 @@
                                                 <button type="button" class="btn btn-outline-primary"> <img
                                                         src="./Assets/google.svg" alt="Google"> Sign Up with
                                                     Google</button>
-                                                <button type="button" id="btnDiss" class="btn btn-outline">Forgot Password?</button>
+                                                <button type="button" id="btnDiss" class="btn btn-outline">Forgot
+                                                    Password?</button>
                                             </div>
                                         </form>
                                         <div class="login-image-container">
@@ -187,6 +195,18 @@
     <section class="corousel-image-holder">
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
+                
+                <div class="inner-left-btn">
+                    <div class="btn-upper-special">
+                        <button type="button" class="btn btn-private btn-outline">
+                            <img src="./Assets/icons8-left-arrow-50.png" class="arrowImage" alt="arrow">
+                        </button>
+                    </div>
+                    <div class="another-specialBtn">
+                        <button type="button" class="custom-btn">Join group</button>
+                    </div>
+                </div>
+
                 <div class="carousel-item active">
                     <img src="./Assets/Center-Background.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-text-holder">
@@ -197,7 +217,7 @@
             </div>
     </section>
 
-    <section class="pagination-underlined margin-center">
+    <section class="pagination-underlined margin-center" id="paginationDiss">
         <ul class="nav nav-underline">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">All post(32)</a>
@@ -242,16 +262,34 @@
                 </svg> Join Group</button>
         </div>
     </section>
-    <div class="line-braker-container">
-        <hr class="margin-center line-braker">
-    </div>
+    <hr class="line-braker line-braker-container margin-center" id="lineDis">
 
-    <section class=" card-holder-section">
+
+    <section class=" card-holder-section" id="cardMarg">
         <div class="card-holder ">
 
             <div class="inner-card-holder">
                 <div class="col">
                     <div class="card">
+                        <div class="specialHolder">
+                            <div class="number">
+                                <span>Post(332)</span>
+                            </div>
+                            <div class="btn-special">
+                                <button type="button" class="btn btn-back btn-inner">View All <svg width='22' height='22'
+                                        viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                        <g id='baseline-arrow_drop_down-24px' clip-path='url(#clip0_1_1136)'>
+                                            <path id='Vector' d='M6.41667 9.16669L11 13.75L15.5833 9.16669H6.41667Z'
+                                                fill='black' />
+                                        </g>
+                                        <defs>
+                                            <clipPath id='clip0_1_1136'>
+                                                <rect width='22' height='22' fill='white' />
+                                            </clipPath>
+                                        </defs>
+                                    </svg></button>
+                            </div>
+                        </div>
                         <img src="./Assets/Mountain-Fog.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-title">✍️ Article</h2>
@@ -374,7 +412,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*TzaiFDmkiEkOxNU7eG43pw.jpeg" class="card-img-top" alt="...">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*TzaiFDmkiEkOxNU7eG43pw.jpeg"
+                            class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-title">✍️ Article</h2>
                             <div class="dots-heading">
@@ -435,7 +474,8 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="https://images.pexels.com/photos/3844788/pexels-photo-3844788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                        <img src="https://images.pexels.com/photos/3844788/pexels-photo-3844788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="card-img-top" alt="...">
                         <div class="card-body">
                             <h2 class="card-title">✍️ Article</h2>
                             <div class="dots-heading">
@@ -454,11 +494,38 @@
                             <p>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
                             <div class="card-loc-holder">
                                 <div class="leftSide">
-                                    <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><g id='outline-work_outline-24px' clip-path='url(#clip0_1_941)'><path id='Vector' d='M11.6667 5.00008V3.33341H8.33342V5.00008H11.6667ZM3.33341 6.66675V15.8334H16.6667V6.66675H3.33341ZM16.6667 5.00008C17.5917 5.00008 18.3334 5.74175 18.3334 6.66675V15.8334C18.3334 16.7584 17.5917 17.5001 16.6667 17.5001H3.33341C2.40841 17.5001 1.66675 16.7584 1.66675 15.8334L1.67508 6.66675C1.67508 5.74175 2.40841 5.00008 3.33341 5.00008H6.66675V3.33341C6.66675 2.40841 7.40841 1.66675 8.33342 1.66675H11.6667C12.5917 1.66675 13.3334 2.40841 13.3334 3.33341V5.00008H16.6667Z' fill='black'/></g><defs><clipPath id='clip0_1_941'><rect width='20' height='20' fill='white'/></clipPath></defs></svg>
-                                <span>Bring your backpack</span>
+                                    <svg width='20' height='20' viewBox='0 0 20 20' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <g id='outline-work_outline-24px' clip-path='url(#clip0_1_941)'>
+                                            <path id='Vector'
+                                                d='M11.6667 5.00008V3.33341H8.33342V5.00008H11.6667ZM3.33341 6.66675V15.8334H16.6667V6.66675H3.33341ZM16.6667 5.00008C17.5917 5.00008 18.3334 5.74175 18.3334 6.66675V15.8334C18.3334 16.7584 17.5917 17.5001 16.6667 17.5001H3.33341C2.40841 17.5001 1.66675 16.7584 1.66675 15.8334L1.67508 6.66675C1.67508 5.74175 2.40841 5.00008 3.33341 5.00008H6.66675V3.33341C6.66675 2.40841 7.40841 1.66675 8.33342 1.66675H11.6667C12.5917 1.66675 13.3334 2.40841 13.3334 3.33341V5.00008H16.6667Z'
+                                                fill='black' />
+                                        </g>
+                                        <defs>
+                                            <clipPath id='clip0_1_941'>
+                                                <rect width='20' height='20' fill='white' />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>Bring your backpack</span>
                                 </div>
                                 <div class="right-side">
-                                    <svg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'><g id='outline-location_on-24px 2' clip-path='url(#clip0_1_1233)'><path id='Vector' d='M9 1.5C6.0975 1.5 3.75 3.8475 3.75 6.75C3.75 10.6875 9 16.5 9 16.5C9 16.5 14.25 10.6875 14.25 6.75C14.25 3.8475 11.9025 1.5 9 1.5ZM5.25 6.75C5.25 4.68 6.93 3 9 3C11.07 3 12.75 4.68 12.75 6.75C12.75 8.91 10.59 12.1425 9 14.16C7.44 12.1575 5.25 8.8875 5.25 6.75Z' fill='black'/><path id='Vector_2' d='M9 8.625C10.0355 8.625 10.875 7.78553 10.875 6.75C10.875 5.71447 10.0355 4.875 9 4.875C7.96447 4.875 7.125 5.71447 7.125 6.75C7.125 7.78553 7.96447 8.625 9 8.625Z' fill='black'/></g><defs><clipPath id='clip0_1_1233'><rect width='18' height='18' fill='white'/></clipPath></defs></svg>
+                                    <svg width='18' height='18' viewBox='0 0 18 18' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <g id='outline-location_on-24px 2' clip-path='url(#clip0_1_1233)'>
+                                            <path id='Vector'
+                                                d='M9 1.5C6.0975 1.5 3.75 3.8475 3.75 6.75C3.75 10.6875 9 16.5 9 16.5C9 16.5 14.25 10.6875 14.25 6.75C14.25 3.8475 11.9025 1.5 9 1.5ZM5.25 6.75C5.25 4.68 6.93 3 9 3C11.07 3 12.75 4.68 12.75 6.75C12.75 8.91 10.59 12.1425 9 14.16C7.44 12.1575 5.25 8.8875 5.25 6.75Z'
+                                                fill='black' />
+                                            <path id='Vector_2'
+                                                d='M9 8.625C10.0355 8.625 10.875 7.78553 10.875 6.75C10.875 5.71447 10.0355 4.875 9 4.875C7.96447 4.875 7.125 5.71447 7.125 6.75C7.125 7.78553 7.96447 8.625 9 8.625Z'
+                                                fill='black' />
+                                        </g>
+                                        <defs>
+                                            <clipPath id='clip0_1_1233'>
+                                                <rect width='18' height='18' fill='white' />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
                                     <span>Lucknow, Uttar Pradesh</span>
                                 </div>
                             </div>
@@ -510,7 +577,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        
+
                         <div class="card-body">
                             <h2 class="card-title">Program Everything </h2>
                             <div class="dots-heading">
@@ -530,11 +597,38 @@
 
                             <div class="card-loc-holder">
                                 <div class="leftSide">
-                                    <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><g id='outline-work_outline-24px' clip-path='url(#clip0_1_941)'><path id='Vector' d='M11.6667 5.00008V3.33341H8.33342V5.00008H11.6667ZM3.33341 6.66675V15.8334H16.6667V6.66675H3.33341ZM16.6667 5.00008C17.5917 5.00008 18.3334 5.74175 18.3334 6.66675V15.8334C18.3334 16.7584 17.5917 17.5001 16.6667 17.5001H3.33341C2.40841 17.5001 1.66675 16.7584 1.66675 15.8334L1.67508 6.66675C1.67508 5.74175 2.40841 5.00008 3.33341 5.00008H6.66675V3.33341C6.66675 2.40841 7.40841 1.66675 8.33342 1.66675H11.6667C12.5917 1.66675 13.3334 2.40841 13.3334 3.33341V5.00008H16.6667Z' fill='black'/></g><defs><clipPath id='clip0_1_941'><rect width='20' height='20' fill='white'/></clipPath></defs></svg>
-                                <span>Bring your backpack</span>
+                                    <svg width='20' height='20' viewBox='0 0 20 20' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <g id='outline-work_outline-24px' clip-path='url(#clip0_1_941)'>
+                                            <path id='Vector'
+                                                d='M11.6667 5.00008V3.33341H8.33342V5.00008H11.6667ZM3.33341 6.66675V15.8334H16.6667V6.66675H3.33341ZM16.6667 5.00008C17.5917 5.00008 18.3334 5.74175 18.3334 6.66675V15.8334C18.3334 16.7584 17.5917 17.5001 16.6667 17.5001H3.33341C2.40841 17.5001 1.66675 16.7584 1.66675 15.8334L1.67508 6.66675C1.67508 5.74175 2.40841 5.00008 3.33341 5.00008H6.66675V3.33341C6.66675 2.40841 7.40841 1.66675 8.33342 1.66675H11.6667C12.5917 1.66675 13.3334 2.40841 13.3334 3.33341V5.00008H16.6667Z'
+                                                fill='black' />
+                                        </g>
+                                        <defs>
+                                            <clipPath id='clip0_1_941'>
+                                                <rect width='20' height='20' fill='white' />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>Bring your backpack</span>
                                 </div>
                                 <div class="right-side">
-                                    <svg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'><g id='outline-location_on-24px 2' clip-path='url(#clip0_1_1233)'><path id='Vector' d='M9 1.5C6.0975 1.5 3.75 3.8475 3.75 6.75C3.75 10.6875 9 16.5 9 16.5C9 16.5 14.25 10.6875 14.25 6.75C14.25 3.8475 11.9025 1.5 9 1.5ZM5.25 6.75C5.25 4.68 6.93 3 9 3C11.07 3 12.75 4.68 12.75 6.75C12.75 8.91 10.59 12.1425 9 14.16C7.44 12.1575 5.25 8.8875 5.25 6.75Z' fill='black'/><path id='Vector_2' d='M9 8.625C10.0355 8.625 10.875 7.78553 10.875 6.75C10.875 5.71447 10.0355 4.875 9 4.875C7.96447 4.875 7.125 5.71447 7.125 6.75C7.125 7.78553 7.96447 8.625 9 8.625Z' fill='black'/></g><defs><clipPath id='clip0_1_1233'><rect width='18' height='18' fill='white'/></clipPath></defs></svg>
+                                    <svg width='18' height='18' viewBox='0 0 18 18' fill='none'
+                                        xmlns='http://www.w3.org/2000/svg'>
+                                        <g id='outline-location_on-24px 2' clip-path='url(#clip0_1_1233)'>
+                                            <path id='Vector'
+                                                d='M9 1.5C6.0975 1.5 3.75 3.8475 3.75 6.75C3.75 10.6875 9 16.5 9 16.5C9 16.5 14.25 10.6875 14.25 6.75C14.25 3.8475 11.9025 1.5 9 1.5ZM5.25 6.75C5.25 4.68 6.93 3 9 3C11.07 3 12.75 4.68 12.75 6.75C12.75 8.91 10.59 12.1425 9 14.16C7.44 12.1575 5.25 8.8875 5.25 6.75Z'
+                                                fill='black' />
+                                            <path id='Vector_2'
+                                                d='M9 8.625C10.0355 8.625 10.875 7.78553 10.875 6.75C10.875 5.71447 10.0355 4.875 9 4.875C7.96447 4.875 7.125 5.71447 7.125 6.75C7.125 7.78553 7.96447 8.625 9 8.625Z'
+                                                fill='black' />
+                                        </g>
+                                        <defs>
+                                            <clipPath id='clip0_1_1233'>
+                                                <rect width='18' height='18' fill='white' />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
                                     <span>Lucknow, Uttar Pradesh</span>
                                 </div>
                             </div>
@@ -585,13 +679,13 @@
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
 
         </div>
 
-        <div class="location-search">
+        <div class="location-search" id="locDis">
             <div class="inner-location">
                 <div class="location-child">
                     <span class="svgLoc"><svg width='18' height='18' viewBox='0 0 18 18' fill='none'
@@ -630,13 +724,26 @@
                     <span>Your location will help us serve better and extend a personalised experience.</span>
                 </div>
                 <div class="recomdation-starting">
-                    <svg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'><g id='twotone-thumb_up-24px' clip-path='url(#clip0_1_1263)'><path id='Vector' opacity='0.3' d='M15.75 9V7.5H9L10.005 3.495L6.75 6.75V14.25H13.5L15.75 9Z' fill='black'/><path id='Vector_2' d='M6.75 15.75H13.5C14.1225 15.75 14.655 15.375 14.88 14.835L17.145 9.5475C17.2125 9.375 17.25 9.195 17.25 9V7.5C17.25 6.675 16.575 6 15.75 6H11.0175L11.73 2.5725L11.7525 2.3325C11.7525 2.025 11.625 1.74 11.4225 1.5375L10.6275 0.75L5.685 5.6925C5.415 5.9625 5.25 6.3375 5.25 6.75V14.25C5.25 15.075 5.925 15.75 6.75 15.75ZM6.75 6.75L10.005 3.495L9 7.5H15.75V9L13.5 14.25H6.75V6.75ZM0.75 6.75H3.75V15.75H0.75V6.75Z' fill='black'/></g><defs><clipPath id='clip0_1_1263'><rect width='18' height='18' fill='white'/></clipPath></defs></svg>
+                    <svg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <g id='twotone-thumb_up-24px' clip-path='url(#clip0_1_1263)'>
+                            <path id='Vector' opacity='0.3'
+                                d='M15.75 9V7.5H9L10.005 3.495L6.75 6.75V14.25H13.5L15.75 9Z' fill='black' />
+                            <path id='Vector_2'
+                                d='M6.75 15.75H13.5C14.1225 15.75 14.655 15.375 14.88 14.835L17.145 9.5475C17.2125 9.375 17.25 9.195 17.25 9V7.5C17.25 6.675 16.575 6 15.75 6H11.0175L11.73 2.5725L11.7525 2.3325C11.7525 2.025 11.625 1.74 11.4225 1.5375L10.6275 0.75L5.685 5.6925C5.415 5.9625 5.25 6.3375 5.25 6.75V14.25C5.25 15.075 5.925 15.75 6.75 15.75ZM6.75 6.75L10.005 3.495L9 7.5H15.75V9L13.5 14.25H6.75V6.75ZM0.75 6.75H3.75V15.75H0.75V6.75Z'
+                                fill='black' />
+                        </g>
+                        <defs>
+                            <clipPath id='clip0_1_1263'>
+                                <rect width='18' height='18' fill='white' />
+                            </clipPath>
+                        </defs>
+                    </svg>
                     <span>RECOMMENDED GROUPS</span>
                 </div>
                 <div class="recomandation-gropus">
                     <div class="inner-groups1">
                         <img src="https://hasanhashmi1.github.io/Hexon/Hasan.jpg" alt="Hasan Hashmi">
-                    <span>Hasan Hashmi</span>
+                        <span>Hasan Hashmi</span>
                     </div>
                     <div class="inner-btn">
                         <button type="button" class="btn btn-inner">Follow</button>
@@ -644,8 +751,9 @@
                 </div>
                 <div class="recomandation-gropus">
                     <div class="inner-groups1">
-                        <img src="https://i.redd.it/male-random-selfie-27m-v0-s6bd3ohvwx4c1.jpg?width=2208&format=pjpg&auto=webp&s=fee39976344658358256e1679cf8bfe5eff65159" alt="devi prasad">
-                    <span>Devi Prasad</span>
+                        <img src="https://i.redd.it/male-random-selfie-27m-v0-s6bd3ohvwx4c1.jpg?width=2208&format=pjpg&auto=webp&s=fee39976344658358256e1679cf8bfe5eff65159"
+                            alt="devi prasad">
+                        <span>Devi Prasad</span>
                     </div>
                     <div class="inner-btn">
                         <button type="button" class="btn btn-inner">Follow</button>
@@ -653,8 +761,9 @@
                 </div>
                 <div class="recomandation-gropus">
                     <div class="inner-groups1">
-                        <img src="https://1.bp.blogspot.com/-vaPCL1ohPwQ/X0jLnWuR-eI/AAAAAAAABMA/V3beAIF0ZygrC5C-ahG-Y3CZycQwYIKbACLcBGAsYHQ/s1600/images%2B%252836%2529-min%2B%25281%2529.jpeg" alt="ujjwal">
-                    <span>Ujwal Dixit</span>
+                        <img src="https://1.bp.blogspot.com/-vaPCL1ohPwQ/X0jLnWuR-eI/AAAAAAAABMA/V3beAIF0ZygrC5C-ahG-Y3CZycQwYIKbACLcBGAsYHQ/s1600/images%2B%252836%2529-min%2B%25281%2529.jpeg"
+                            alt="ujjwal">
+                        <span>Ujwal Dixit</span>
                     </div>
                     <div class="inner-btn">
                         <button type="button" class="btn btn-inner">Follow</button>
@@ -662,8 +771,9 @@
                 </div>
                 <div class="recomandation-gropus">
                     <div class="inner-groups1">
-                        <img src="https://imgeng.jagran.com/images/2022/dec/akshay%20kumar%20hera%20pheri%2031670243655947.jpg" alt="Raju">
-                    <span>Rajeshwar Kumar</span>
+                        <img src="https://imgeng.jagran.com/images/2022/dec/akshay%20kumar%20hera%20pheri%2031670243655947.jpg"
+                            alt="Raju">
+                        <span>Rajeshwar Kumar</span>
                     </div>
                     <div class="inner-btn">
                         <button type="button" class="btn btn-inner">Follow</button>
@@ -677,8 +787,55 @@
 
     </section>
 
+    <button type="button" id="controlBtn" class="fixed-button">
+        <img src="./Assets/icons8-pencil-50.png" class="fixed-img" alt="signing">
+    </button>
 
+    <div class="popUp" id="hiddenPop">
+        <div class="hiddenText">
+           <div class="fullWid">
+            <h2 id="hiddenHead">Create Account</h2>
+            <button type="button" id="closeBtn" class="hiddenButton btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg>
+            </button>
+           </div>
+        </div>
+       <div class="halfLength">
+       <div class="hiddenForm">
+        <form class="AccountCreation correctionForm">
+            <div class="input-group" id="blockHidden">
 
+                <input type="text" placeholder="First Name" aria-label="First name"
+                    class="form-control">
+                <input type="text" placeholder="Last Name" aria-label="Last name"
+                    class="form-control">
+            </div>
+            <input type="email" placeholder="Email" aria-describedby="emailHelp"
+                class="form-control">
+            <input type="password" placeholder="Password" class="form-control"
+                id="exampleInputPassword1">
+            <input type="password" placeholder="Confirm Password" class="form-control"
+                id="exampleInputPassword2">
+            <div class="hiddenButtonsHolder">
+                <button class="btn-login hiddenBtnLogin" type="button" id="hiddenCreateAccount">Create
+                    Account</button>
+                    <button class="signUpNow" id="hiddenChange" onclick="signUp()">or,Sign In</button>
+            </div>
+            <div class="social-login">
+                <button type="button" class="btn btn-outline-primary"><img
+                        src="./Assets/facebook-ImnSLa_q.svg" alt="Facebook"> Sign Up
+                    with Facebook</button>
+                <button type="button" class="btn btn-outline-primary"> <img
+                        src="./Assets/google.svg" alt="Google"> Sign Up with
+                    Google</button>
+                <button type="button" id="hiddDiss" class="btn btn-outline">Forgot
+                    Password?</button>
+            </div>
+        </form>
+       </div> 
+       
+       </div>
+    </div>
 
 
 
